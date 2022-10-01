@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decrypt page</title>
+</head>
+<body>
+    <h1>Hello!</h1>
+    <br>
+    <h4>Welcome! Enter you encrypted string</h4>
+    <form method="GET" action="/do_decrypt">
+        <p>Enter string</p>
+        <input type="text" name="crypt_string">
+        <br>
+        <p>Enter key</p>
+        <input type="text" name="crypt_key">
+        <input type="submit" value="Send">
+    </form>
+    <br>
+    <a href="{{ url_for('start_page') }}"><b>Encrypt page</b></a>
+
+
+</body>
+</html>
